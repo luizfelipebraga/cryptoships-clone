@@ -50,10 +50,11 @@ export const Button = styled(Link)`
 
   border: 5px solid #fff;
   border-radius: 1rem;
-  transition: filter 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 
   &:hover {
-    filter: brightness(0.9);
+    filter: brightness(1.3);
+    transform: translateY(-3px);
   }
 
   @media (max-width: 1400px) {
