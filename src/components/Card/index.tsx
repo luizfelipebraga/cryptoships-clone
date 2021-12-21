@@ -37,7 +37,7 @@ export function BoxCard() {
         <BoxDescription></BoxDescription>
       </Card>
 
-      {Cards()}
+      {Buttons()}
 
     </Container>
   )
