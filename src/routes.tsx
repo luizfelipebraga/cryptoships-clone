@@ -8,12 +8,12 @@ export function Routes() {
   return (
     <BrowserRouter>
       <Switch>
-          <Route path="/" exact component={LandingPage}/>
-          <Route path="/home" exact component={HomePage} />
+        <Route path="/" exact component={LandingPage} />
+        <Route path="/home" exact component={HomePage} />
+
+        <SmoothScroll>
           <Route path="/boxes" exact component={BoxesPage} />
-          
-        {/* <SmoothScroll>
-        </SmoothScroll> */}
+        </SmoothScroll>
       </Switch>
     </BrowserRouter >
   )

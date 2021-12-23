@@ -5,19 +5,22 @@ export const Background = styled.div`
   background-image: url(${BackgroundImg});
   background-color: #b5dbd1;
 
-  min-height: 100%;
+  min-height: 120vh;
   width: 100%;
-  position: fixed;
+  position: relative;
   height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   z-index:  2;
+
+  overflow: hidden;
 `;
 
 export const Container = styled.section`
-  height: 100%;
+  min-height: 125vh;
+  position: relative;
   background-color: rgba(0, 0, 0, .60);
 `;
 
@@ -63,7 +66,7 @@ export const Content = styled.section`
 export const Main = styled.main`
   height: 100%;
   padding: 2rem 0;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
 `;
 
@@ -87,7 +90,7 @@ export const TypeBox = styled.div`
   border-radius: 8px;
   border: 5px solid #fff;
 
-  width: 75rem;
+  width: 100%;
   height: 18rem;
 
   display: flex;
@@ -113,8 +116,23 @@ export const ContentBox = styled.div`
     
     font-style: italic;
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 700;
     white-space: nowrap;
     color: #555555;
   }
-`
+`;
+
+export const ContainerCards = styled.div`
+  max-width: 940px;
+  margin: 0 auto;
+
+  margin-top: 2rem;
+`;
+
+export const BoxCards = styled.div`
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;

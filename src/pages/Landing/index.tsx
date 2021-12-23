@@ -1,4 +1,4 @@
-import { Container, Box, Button } from "./styes";
+import { Container, Box, Button } from "./styles";
 
 export function LandingPage() {
   return (

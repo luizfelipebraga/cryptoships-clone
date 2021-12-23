@@ -1,12 +1,14 @@
 import { Container, Card, ImgCard, BoxDescription,  BuyButton } from "./styles";
 
 type BoxProps = {
-  img: HTMLImageElement;
+  img: string;
   title: string;
   description: string;
+  buy: string;
+  color: string;
 }
 
-export function BoxCard({...props}: BoxProps) {
+export function CardComponent({...props}: BoxProps) {
   // const boxes = [
   //   {
   //     id: '1',
@@ -39,11 +41,15 @@ export function BoxCard({...props}: BoxProps) {
     <Container>
 
       <Card>
-        <ImgCard />
-        <BoxDescription></BoxDescription>
+        <ImgCard src={props.img} />
+
+        <BoxDescription>
+          <span style={{color: props.color}}>{props.title}</span>
+          <span style={{color: props.color}}>{props.description}</span>
+        </BoxDescription>
       </Card>
 
-      <BuyButton></BuyButton>
+      <BuyButton>{props.buy}</BuyButton>
 
     </Container>
   )
