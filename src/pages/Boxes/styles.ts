@@ -13,7 +13,7 @@ export const Background = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index:  2;
+  z-index: 2;
 
   overflow: hidden;
 `;
@@ -27,7 +27,7 @@ export const Container = styled.section`
 export const Header = styled.header`
   width: 100%;
   padding: 1.5rem;
-  
+  position: fixed;
   background: #fff;
 `;
 
@@ -59,7 +59,8 @@ export const MetaMaskSignIn = styled.button`
 `;
 
 export const Content = styled.section`
-  height: 90vh;
+  padding: 7rem 0;
+  min-height: 90vh;
   width: 100%;
 `;
 
